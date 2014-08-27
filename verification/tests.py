@@ -43,11 +43,11 @@ TESTS = {
         },
         {
             "input": [0, 0, 'implication'],
-            "answer": True,
+            "answer": 1,
         },
         {
             "input": [0, 1, 'implication'],
-            "answer": True,
+            "answer": 1,
         },
         {
             "input": [1, 0, 'implication'],
@@ -75,19 +75,19 @@ TESTS = {
         },
         {
             "input": [0, 0, 'equivalence'],
-            "answer": True,
+            "answer": 1,
         },
         {
             "input": [0, 1, 'equivalence'],
-            "answer": False,
+            "answer": 0,
         },
         {
             "input": [1, 0, 'equivalence'],
-            "answer": False,
+            "answer": 0,
         },
         {
             "input": [1, 1, 'equivalence'],
-            "answer": True,
+            "answer": 1,
         },
     ]
 }
