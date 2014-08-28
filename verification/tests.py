@@ -8,7 +8,7 @@ Each test is dict with
 """
 
 TESTS = {
-    "All": [
+    "Basic": [
         {
             "input": [0, 0, 'conjunction'],
             "answer": 0,
@@ -41,6 +41,9 @@ TESTS = {
             "input": [1, 1, 'disjunction'],
             "answer": 1,
         },
+    ],
+    "Extra": [
+
         {
             "input": [0, 0, 'implication'],
             "answer": 1,
