@@ -1,15 +1,21 @@
-
-
-
-
-
-<body data-author="YOUR_NICK">
+<body data-author="bryukh">
 <div class="question-answer">
     <div class="question">
         I have no idea how to start solving this mission
     </div>
     <div class="answer">
-        First hint.
+        Python doesn't have "swith" statement, so you can use "if-else if" construction.
+<pre>
+if cond1:
+    do1...
+else if cond2:
+    do2...
+else if cond3:
+    do3...
+...
+else:
+    do_else
+    </pre>
     </div>
 </div>
 <div class="question-answer">
@@ -17,7 +23,17 @@
         I need some help to proceed with the mission
     </div>
     <div class="answer">
-        Second hint.
+        First two operations are simple.
+<pre>
+# conjunction
+# x and y
+1 and 0 == 0
+1 and 1 == 1
+# disjunction
+# x or y
+1 or 0 == 1
+0 or 0 == 1
+    </pre>
     </div>
 </div>
 <div class="question-answer">
@@ -25,7 +41,13 @@
         I am gone half way through. Need help!
     </div>
     <div class="answer">
-        You can stop by these hints.
+        "exclusive or" or "XOR" already implemented in Python.
+<pre>
+# exclusive
+# x ^ y
+1 ^ 1 == 0
+1 ^ 0 == 1
+    </pre>
     </div>
 </div>
 <div class="question-answer">
@@ -33,7 +55,13 @@
         I am stuck. I need a small hint.
     </div>
     <div class="answer">
-        Or add more than 5.
+        Material implication can be described with simple operations.
+<pre>
+# implication
+# not x or y
+not 1 or 0 == 0
+not 0 or 0 == 1
+    </pre>
     </div>
 </div>
 <div class="question-answer">
@@ -41,7 +69,13 @@
         I tried all I could. Nothing works. SOS
     </div>
     <div class="answer">
-        These are just examples for you.
+        Equivalence can described wit XOR.
+<pre>
+# equivalence
+# not (x ^ y)
+not (1 ^ 1) == 1
+not (1 ^ 0) == 0
+    </pre>
     </div>
 </div>
 
