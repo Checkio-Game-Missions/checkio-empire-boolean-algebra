@@ -1,0 +1,79 @@
+<p>
+    En math&eacute;matiques et en logique math&eacute;matique,
+    <a href="http://fr.wikipedia.org/wiki/Alg%C3%A8bre_de_Boole_%28logique%29#Fonctions_logiques_fondamentales">l'alg&egrave;bre de Boole</a>
+    est un sous-domaine de l'alg&egrave;bre dans lequel les valeurs des variables sont &quot;vrai&quot; et &quot;faux&quot;, le plus souvent not&eacute;es respectivement 1 et 0.
+    &Agrave; la diff&eacute;rence de l'alg&egrave;bre &eacute;l&eacute;mentaire o&ugrave; les variables sont des nombres et les principales op&eacute;rations sont l'addition et la multiplication,
+    les principales op&eacute;rations de l'alg&egrave;bre de Boole sont la conjonction (not&eacute;e &and;), la disjonction (not&eacute;e &or;) et la n&eacute;gation (not&eacute;e &not;).
+</p>
+
+<p>
+    Dans cette mission, vous devez impl&eacute;menter quelques op&eacute;rations bool&eacute;ennes :<br>
+    - <strong>la conjonction</strong> (appel&eacute;e ici <i>&quot;conjunction&quot;</i>)
+    not&eacute;e x&nbsp;&and;&nbsp;y, satisfait x&nbsp;&and;&nbsp;y = 1 si x = y = 1 et x&nbsp;&and;&nbsp;y = 0 sinon.<br>
+    - <strong>la disjonction</strong> (appel&eacute;e ici <i>&quot;disjunction&quot;</i>)
+    not&eacute;e x&nbsp;&or;&nbsp;y, satisfait x&nbsp;&or;&nbsp;y = 0 si x = y = 0 et x&nbsp;&or;&nbsp;y = 1 sinon.<br>
+    - <strong>l'implication</strong> (implication mat&eacute;rielle) (appel&eacute;e ici <i>&quot;implication&quot;</i>)
+    not&eacute;e x&rarr;y, peut &ecirc;tre d&eacute;crite telle que &not;&nbsp;x&nbsp;&or;&nbsp;y.
+    Si x est vrai alors la valeur de x &rarr; y est celle de y.
+    Mais si x est faux, alors la valeur de y peut &ecirc;tre ignor&eacute;e. Cependant, cette op&eacute;ration doit retourner une proposition vraie et il n'y a que deux choix possibles :
+    la valeur de retour est donc celle qui laissera l'expression la plus neutre possible, &agrave; savoir &quot;vrai&quot;.<br>
+    - <strong>l'exclusion</strong> (ou exclusif) (appel&eacute;e ici <i>&quot;exclusive&quot;</i>)
+    not&eacute;e x&nbsp;&oplus;&nbsp;y, peut &ecirc;tre d&eacute;crite telle que (x&nbsp;&or;&nbsp;y)&nbsp;&and;&nbsp;&not;&nbsp;(x&nbsp;&and;&nbsp;y).
+    Cette relation exclut la possibilit&eacute; d'avoir simultan&eacute;ment les m&ecirc;mes valeurs pour x et y.
+    D&eacute;finie de mani&egrave;re arithm&eacute;tique, c'est une addition modulo 2 o&ugrave; 1 + 1 = 0.<br>
+    - <strong>l'&eacute;quivalence</strong> (appel&eacute;e ici <i>&quot;equivalence&quot;</i>)
+    not&eacute;e x&nbsp;&equiv;&nbsp;y peut &ecirc;tre d&eacute;crite telle que &not;&nbsp;(x&nbsp;&oplus;&nbsp;y).
+    La relation est vraie seulement si x et y ont la m&ecirc;me valeur.<br>
+
+</p>
+
+<p>
+    Voici la table de v&eacute;rit&eacute; pour ces op&eacute;rations :
+</p>
+<div style="text-align: center;">
+<pre>
+ x | y | x&and;y | x&or;y | x&rarr;y | x&oplus;y | x&equiv;y |
+--------------------------------------
+ 0 | 0 |  0  |  0  |  1  |  0  |  1  |
+ 1 | 0 |  0  |  1  |  0  |  1  |  0  |
+ 0 | 1 |  0  |  1  |  1  |  1  |  0  |
+ 1 | 1 |  1  |  1  |  1  |  0  |  1  |
+--------------------------------------
+</pre>
+</div>
+
+<p>
+    On vous donne deux valeurs bool&eacute;ennes <strong>x</strong> et <strong>y</strong> (1 ou 0) et un nom d'op&eacute;ration tel que d&eacute;crit entre parenth&egrave;ses ci-dessus.
+    Vous devez calculer la valeur de la relation et la retourner avec 1 ou 0.
+</p>
+<p>
+    <strong>Entr&eacute;e : </strong> Trois arguments. X et Y (1 ou 0). Un nom d'op&eacute;ration en tant que chaine de caract&egrave;res.
+</p>
+
+<p>
+    <strong>Sortie : </strong> Le r&eacute;sultat (1 ou 0).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple:</strong>
+    </p>
+    <pre class="brush: python">
+boolean(1, 0, "conjunction") == 0
+boolean(0, 1, "exclusive") == 1
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>&Agrave; quoi cela sert : </strong>
+    Vous apprendrez ici &agrave; travailler avec des bool&eacute;ens et des op&eacute;rateurs. Vous pourrez m&ecirc;me penser aux nombres en termes de bool&eacute;ens.
+
+</p>
+
+<p>
+    <strong>Pr&eacute;condition :</strong>
+    x in (0, 1)<br>
+    y in (0, 1)<br>
+    op&eacute;ration in ("conjunction", "disjunction", "implication", "exclusive", "equivalence")
+</p>
