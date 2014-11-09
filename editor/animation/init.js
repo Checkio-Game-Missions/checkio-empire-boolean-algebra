@@ -45,7 +45,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
             var checkioInput = data.in || [1, 1, "conjunction"];
             var checkioInputStr = fname + '(' + JSON.stringify(checkioInput[0]) + ", "
                 + JSON.stringify(checkioInput[1]) + ", "
-                + JSON.stringify(checkioInput[2]) + ')';
+                + "u" + JSON.stringify(checkioInput[2]) + ')';
 
             var failError = function (dError) {
                 $content.find('.call').html(checkioInputStr);
