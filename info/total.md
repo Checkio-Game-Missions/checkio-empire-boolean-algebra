@@ -1,5 +1,5 @@
-Shoot at this robot OR that? Skip that AND shoot later.
-Wait reinforcement XOR cover fire? Oh, it looks like we have problems with logic module.
+Sir, we've got enemies incoming. Should we shoot at the robot over there OR this robot? Skip that 'bot AND shoot later?
+Wait reinforcement XOR cover fire? Oh blasted bolts, it looks like we have problems with the logic module.
 
 In mathematics and mathematical logic,
 [Boolean algebra](http://en.wikipedia.org/wiki/Boolean_algebra#Basic_operations)
@@ -48,7 +48,7 @@ boolean(0, 1, "exclusive") == 1
 ```
 **How it is used:**
 
-Here you will learn how to work with boolean values and operators. You even get to think about numbers as booleans.
+Fixing our defense bot's logic modules gets you working with boolean values and operators, a core concept in many programming languages.
 
 **Precondition:**
 ```python
