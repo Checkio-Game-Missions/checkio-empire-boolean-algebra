@@ -1,3 +1,4 @@
 **How it is used:**
 
-Here you will learn how to work with boolean values and operators. You even get to think about numbers as booleans.
+Fixing our defense bot's logic modules gets you working with boolean values and operators, 
+a core concept in many programming languages.
