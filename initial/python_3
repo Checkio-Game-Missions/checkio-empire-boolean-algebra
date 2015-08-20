@@ -12,3 +12,5 @@ if __name__ == '__main__':
     assert boolean(1, 1, "implication") == 1, "material"
     assert boolean(0, 1, "exclusive") == 1, "xor"
     assert boolean(0, 1, "equivalence") == 0, "same?"
+
+    print("All done? Earn rewards by using the 'Check' button!")
