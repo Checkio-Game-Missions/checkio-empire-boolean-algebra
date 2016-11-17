@@ -22,12 +22,12 @@ In this mission you should implement some boolean operations:
 
 Here you can see the truth table for these operations:
 
-| x | y | x∧y | x∨y | x→y | x⊕y | x≡y |
-| - | - | --- | --- | --- | --- | --- |
-| 0 | 0 |  0  |  0  |  1  |  0  |  1  |
-| 1 | 0 |  0  |  1  |  0  |  1  |  0  |
-| 0 | 1 |  0  |  1  |  1  |  1  |  0  |
-| 1 | 1 |  1  |  1  |  1  |  0  |  1  |
+    |  x  |  y  | x∧y | x∨y | x→y | x⊕y | x≡y |
+    +-----+-----+-----+-----+-----+------+-----+
+    |  0  |  0  |  0  |  0  |  1  |   0  |  1  |
+    |  1  |  0  |  0  |  1  |  0  |   1  |  0  |
+    |  0  |  1  |  0  |  1  |  1  |   1  |  0  |
+    |  1  |  1  |  1  |  1  |  1  |   0  |  1  |
 
 
 You are given two boolean values **x** and **y** as 1 or 0 and you are given an operation name as described earlier. 
